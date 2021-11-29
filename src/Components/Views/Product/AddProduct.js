@@ -21,7 +21,7 @@ const navigation = [
       href: "/DashAdmin/addProduct",
       current: true,
   },
-  { name: "Favoritos", href: "#", current: false},
+  { name: "Favoritos", href: "/DashAdmin/Favoritos", current: false},
 ];
 const userNavigation = [{ name: "Sign out", href: "#" }];
 

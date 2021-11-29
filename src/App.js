@@ -4,7 +4,7 @@ import { Login } from "./Components/Views/Login/Login";
 import { Register } from "./Components/Views/Login/Register";
 import { DashboardAdmin } from "./Components/Views/Dashboard/DashboardAdmin";
 import { DashboardUser } from "./Components/Views/Dashboard/DashboardUser";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, HashRouter } from "react-router-dom";
 import PrivateRoute from "./Components/Router/PrivateRoute";
 import { AddProduct } from "./Components/Views/Product/AddProduct";
 import { Product } from "./Components/Views/Product/Product";
@@ -13,8 +13,8 @@ import { Favorites } from "./Components/Views/Favorites/Favorites";
 
 function App({ token, rol }) {
   return (
-    <Router>
-      <Routes>
+    <HashRouter>
+      
         <Route exact path="/" element={<Login />}></Route>
         <Route
           exact
@@ -61,8 +61,8 @@ function App({ token, rol }) {
             </PrivateRoute>
           }
         ></Route>
-      </Routes>
-    </Router>
+      
+    </HashRouter>
   );
 }
 
