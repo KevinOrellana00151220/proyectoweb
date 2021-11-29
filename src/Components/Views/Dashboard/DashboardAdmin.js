@@ -15,14 +15,14 @@ const user = {
     "https://www.eluniversal.com.mx/sites/default/files/2019/11/04/ques-es-un-bot.jpg",
 };
 const navigation = [
-  { name: "Inicio", href: "/DashAdmin", current: true },
-  { name: "My Posts", href: "/DashAdmin/Product", current: false },
+  { name: "Inicio", href: "/proyectoweb/#/DashAdmin", current: true },
+  { name: "My Posts", href: "/proyectoweb/#/DashAdmin/Product", current: false },
   {
     name: "Add New Post",
-    href: "/DashAdmin/addProduct",
+    href: "/proyectoweb/#/DashAdmin/addProduct",
     current: false,
   },
-  { name: "Favoritos", href: "/DashAdmin/Favoritos", current: false },
+  { name: "Favoritos", href: "/proyectoweb/#/DashAdmin/Favoritos", current: false },
 ];
 const userNavigation = [{ name: "Sign out", href: "#" }];
 

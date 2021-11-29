@@ -14,7 +14,7 @@ import { Favorites } from "./Components/Views/Favorites/Favorites";
 function App({ token, rol }) {
   return (
     <HashRouter>
-      
+      <Routes>
         <Route exact path="/" element={<Login />}></Route>
         <Route
           exact
@@ -61,7 +61,7 @@ function App({ token, rol }) {
             </PrivateRoute>
           }
         ></Route>
-      
+      </Routes>
     </HashRouter>
   );
 }
